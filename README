@@ -1,0 +1,20 @@
+This is the README file for the Housing analysis assignment:
+
+The basic outline of the processing logic are as follows:
+
+The first thing we need to do is read the input data. After reading the input data we will identify the things in following order:
+
+First we will identify all the apparent numeric and non-numeric predictors.
+Next we will look at the target variable and identify if there it is normal or has any skew or kurtosis (this concept was not taught in the course, but in stats books it is explained).
+Next we will look at identifying any numeric columns which are really categorical.
+We will then identify the number of nulls or missisng values across all columns and deal with them either by removing them or interpolating.
+We will then check the correlation between SalePrice our target and all the other predictors, as well as we'll plot the graphs for SalePrice vs predictor to view relation visually.
+We will also try to identify which predictor variables have high correlation among themselves and replace them with one of them.
+We will then perform one-hot encoding on categorical variables.
+We will perform the univariate analysis - looking at outliers, looking at normality of data and then move to minor bivariate analysis. (actually we'll do it right after corr).
+We will perform first round or multi-linear regression. We'll obtain the R^2 value.
+We will next perform Ridge regression and obtain R^2 value.
+We will next perform Lasso regression and obtain R^2 value.
+
+Out of these the things I did not really endup doing was bivariate analysis since lasso would anyway eliminate all useless predictor variables. 
+
